@@ -1,0 +1,41 @@
+step 1: deploy NFT contract on source chain - does not require mintable supply
+
+	scripts/1_deploy_src_nft.js
+
+
+step 2: deploy NFT on target chain - requires mintable supply
+
+	scripts/2_deploy_dest_nft.js
+
+
+step 3: deploy gateway LILO on source chain
+
+	scripts/3_deploy_gateway_src.js
+
+
+step 4: deploy gateway mint/burn on target chain
+
+	scripts/4_deploy_gateway_dest.js
+
+
+step 5: set peers - connect gateways
+
+	scripts/5_set_peers.js
+
+
+step 6: set minter on target chain to gateway mint/burn
+
+	scripts/6_set_minter.js
+
+
+step 7: bridge tx
+
+	scripts/7_bridge_tx.js
+
+
+
+mint an nft on source chain
+display balance on source chain
+bridge the nft to destination chain
+display balance on destination chain
+bridge the nft back to source chain
